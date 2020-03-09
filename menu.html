@@ -6,22 +6,24 @@
     <meta charset = "utf-8"/> <!--file written uses unicode charset-->
     <link rel = "stylesheet" type = "text/css" href= "./css/active.css">
     <title> YiYi Bakery </title>
-    <script defer src= "main.js"></script>
+    <script src= "main.js" async></script>
+    <!-- Font Sofia used for YIYI BAKERY on all pages -->
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <!-- FONT: source sans pro used as primary text font -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- adds responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+    <!-- top black bar with social media -->
     <div class="icon-bar">
-      <div onmouseover= "overicon()">
-      <a href="https:www.facebook.com" "target="_blank"><img src="./images/facebook2.png" alt="facebook"></a>
-      <a href="https:www.twitter.com" "target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
-      <a href="https:www.instagram.com" "target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
+      <a href="https:www.facebook.com" target="_blank"><img src="./images/facebook2.png" alt="facebook"></a>
+      <a href="https:www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
+      <a href="https:www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
       <a href="#location">VISIT OUR STORES </a>
       <a href="#">(718)680-0064</a>
       <a href="./cart.html" style= "float:right;"> <img src="./images/cart.png" alt="cart"></a>
-
       </div>
     </div>
 
@@ -43,98 +45,93 @@
 
     <h2 class = "title"> Bread Baked Fresh Daily </h2>
     <section class = "buns">
-      <div class="salebuns">
-    <!-- <table class= "bread"> -->
-      <!-- <tr class = "displaybun"> -->
-      <div class="displaybun">
-        <img src = "./images/pinapplebun.jpg" alt="pinapple bun">
-        <span class="itemname"> Pinapple Bun </span>
-        <span class= item-details> $1.00 </span> <button type="button" class= "btn btnaddto"> ADD TO CART </button>
+    <div class="buns-all">
+
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/pinapplebun.jpg" alt="pinapple bun">
+        <span class="bun-name"> Pinapple Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/smbolobao.jpg" alt="small pinapple bun">
-        <span class="itemname"> Mini Pinapple Bun </span>
-        <span class= item-details> 3 for $1.50 </span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/smbolobao.jpg" alt="small pinapple bun">
+        <span class="bun-name"> Mini Pinapple Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> 3 for $1.50</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/sugardoughnut.jpg" alt="sugar doughnut">
-        <span class="itemname"> Twisted Doughnut </span>
-        <span class= item-details> $1.00 </span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/sugardoughnut.jpg" alt="sugar doughnut">
+        <span class="bun-name"> Twisted Doughnut </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/coconutlong.jpg" alt="coconut bun">
-        <span class="itemname"> Coconut Filling Bun </span>
-        <span class= item-details> $1.00</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/coconutlong.jpg" alt="coconut bun">
+        <span class="bun-name"> Coconut Filling Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/coconutcream.jpg" alt="coconut cream bun">
-        <span class="itemname"> Coconut Cream Bun </span>
-        <span class= item-details> $1.00</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/coconutcream.jpg" alt="coconut cream bun">
+        <span class="bun-name"> Coconut Cream Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/spongecake.jpg" alt="sponge cake">
-        <span class="itemname"> Sponge Cake </span>
-        <span class= item-details> $1.00</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/spongecake.jpg" alt="sponge cake">
+        <span class="bun-name"> Sponge Cake </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/hotdog.jpg" alt="hot dog bun">
-        <span class="itemname"> Hot Dog Bun  </span>
-        <span class= item-details> $1.00</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/hotdog.jpg" alt="hot dog bun">
+        <span class="bun-name"> Hot Dog Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.00</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/hotdogscallion.jpg" alt="hot dog scallion bun">
-        <span class="itemname"> Hot Dog Scallion Bun </span>
-        <span class= item-details> $1.25</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/hotdogscallion.jpg" alt="hot dog scallion bun">
+        <span class="bun-name"> Hot Dog Scallion Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.25</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-      <div class="displaybun">
-        <img src = "./images/pork.jpg" alt="pork bun">
-        <span class="itemname"> Roast Pork Bun  </span>
-        <span class= item-details> $1.25</span> <button class= "btn btnaddto" type="button"> ADD TO CART </button>
+      <div class = "bun-items">
+        <img  class="bun-image" src = "./images/pork.jpg" alt="pork bun">
+        <span class="bun-name"> Roast Pork Bun </span>
+        <div class="bun-details">
+            <span class="bun-price"> $1.25</span>
+            <button class= "btn btn-main" type="button"> ADD TO CART </button>
+        </div>
       </div>
 
-
-        <!-- <td> <img src = "./images/pinapplebun.jpg" alt="pinapple bun"> </td> -->
-        <!-- <td> <img src = "./images/smbolobao.jpg" alt="small pinapple bun"> </td>
-        <td> <img src = "./images/sugardoughnut.jpg" alt="sugar doughnut"> </td>
-      </tr>
-      <tr>
-        <td> pinapple bun <br> $1.00 </td>
-        <td> mini pinapple bun <br> 3 for $1.50 </td>
-        <td> twisted sugar doughnut <br> $1.00 </td>
-      </tr>
-      <tr>
-        <td> <img src = "./images/coconutlong.jpg" alt="coconut bun"> </td>
-        <td> <img src = "./images/coconutcream.jpg" alt="coconut cream bun"> </td>
-        <td> <img src = "./images/spongecake.jpg" alt="sponge cake"> </td>
-      </tr>
-      <tr>
-        <td> Coconut Filling Bun <br> $1.00 </td>
-        <td> Coconut Cream Bun <br> $1.00 </td>
-        <td> Sponge Cake <br> $1.00 </td>
-      </tr>
-      <tr>
-        <td> <img src = "./images/hotdog.jpg" alt="hot dog bun"> </td>
-        <td> <img src = "./images/hotdogscallion.jpg" alt="hot dog scallion bun"> </td>
-        <td> <img src = "./images/pork.jpg" alt="pork bun"> </td>
-      </tr>
-      <tr>
-        <td> Hot Dog Bun <br> $1.00 </td>
-        <td> Hot Dog Scallion Bun <br> $1.25 </td>
-        <td> Roast Pork Bun <br> $1.25 </td>
-      </tr> -->
-    <!-- </table> -->
     </div>
     </section>
 
-
+<!--  footer  -------------------------->
     <div class="footer">
       <div class="footericons">
       <h3 style="letter-spacing: 3px;"> YIYI BAKERY</h3>

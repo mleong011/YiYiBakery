@@ -6,6 +6,7 @@
     <meta charset = "utf-8"/> <!--file written uses unicode charset-->
     <link rel = "stylesheet" type = "text/css" href= "./css/active.css">
     <title> YiYi Bakery </title>
+    <!-- javascript fils loads in background -->
     <script src= "main.js" async></script>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -15,9 +16,9 @@
   <body>
     <div class="icon-bar">
       <div onmouseover= "overicon()">
-      <a href="https:www.facebook.com"><img src="./images/facebook2.png" alt="facebook"></a>
-      <a href="https:www.twitter.com"><img src="./images/twitter.png" alt="twitter"></a>
-      <a href="https:www.instagram.com"><img src="./images/instagram.png" alt="instagram"></a>
+      <a href="https:www.facebook.com" target="_blank"><img src="./images/facebook2.png" alt="facebook"></a>
+      <a href="https:www.twitter.com" target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
+      <a href="https:www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
       <a href="#location">VISIT OUR STORES </a>
       <a href="#">(718)680-0064</a>
       <a href="./cart.html" style= "float:right;"> <img src="./images/cart.png" alt="cart"></a>
@@ -40,40 +41,61 @@
 
     <section>
       <h2 class="title"> Cart <h2>
-        <hr class= "division">
-      <div class = "cart-header">
-      <div calss = "cart-row">
-        <span class= "cart-item cart-header cart-column">ITEM </span>
-      <span class = "cart-price cart-header cart-column">PRICE</span>
-        <span class = "cart-quantity cart-header cart-column">QUANTITY</span>
-      </div>
+      <hr class= "division">
 
-
+      <!-- row of headers -->
       <div class = "cart-row">
-        <div class= "cart-item cart-column">
-        <img src= "./images/hotdog.jpg" width="100" height="100">
-        <span class= cart-item-title> Pinapple Bun </span>
+        <span class="cart-item cart-header cart-column">ITEM </span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
       </div>
-         <span class= "cart-price cart-column"> 1.00 </span>
-        <div class= "cart-column">
-        <input class= "cart-quantity-input" type="number" value="6">
-        <button type= "button" class= " btn cart-quantity-button btn-danger danger"> remove </button>
+
+      <div class="cart-items">
+      <!-- row of item -->
+      <div class = "cart-row">
+
+        <div class= "cart-item cart-column">
+          <img class= "cart-item-img" src= "./images/hotdog.jpg" width="100" height="100">
+          <span class= cart-item-title> Pinapple Bun </span>
+        </div>
+
+        <span class= "cart-price cart-column"> $ 1.00 </span>
+
+        <div class= "cart-quantity cart-column">
+          <input class= "cart-quantity-input" type="number" value= "6">
+          <button type="button" class=" btn btn-danger danger"> remove </button>
+        </div>
+
+      </div>
+      <!-- end of row item -->
+
+      <!-- row of item -->
+      <div class = "cart-row">
+
+        <div class= "cart-item cart-column">
+          <img class= "cart-item-img" src= "./images/eggtart.jpg" width="100" height="100">
+          <span class= cart-item-title> Eggtart  </span>
+        </div>
+
+        <span class= "cart-price cart-column"> $ 1.00 </span>
+
+        <div class= "cart-quantity cart-column">
+          <input class= "cart-quantity-input" type="number" value="6">
+          <button type="button" class=" btn btn-danger danger"> remove </button>
+        </div>
+
       </div>
     </div>
-      </div>
 
-      <div class = "cart-row">
-        <div class= "cart-item cart-column">
-        <img src= "./images/eggtart.jpg" width="100" height="100">
-        <span class= cart-item-title> Eggtart </span>
-      </div>
-         <span class= "cart-price cart-column"> 1.00 </span>
-        <div class= "cart-column">
-        <input class= "cart-quantity-input"  type="number" value="6">
-        <button type= "button" class= "btn cart-quantity-button btn-danger danger"> remove </button>
-      </div>
+    <!-- total price -->
+    <div class="cart-total">
+      <span class="cart-total-title">Total<span>
+      <span class="cart-total-price">$5.00</span>
     </div>
-      </div>
+    <!--purchase button -->
+    <div>
+      <button class="btn btn-main btn-purchase"type="button"> PURCHASE </button>
+    </div>
 
     </section>
 
