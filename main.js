@@ -39,7 +39,35 @@ if(document.readyState == 'loading'){
 
   function addToCartClicked(event){
     var button= event.target;
-    
+    var bunItem = button.parentElement.parentElement; //bun-items
+    var title = bunItem.getElementsByClassName("bun-name")[0].innerText;
+    var price = bunItem.getElementsByClassName("bun-price")[0].innerText;
+    var imgsrc = bunItem.getElementsByClassName("bun-image")[0].src;
+    console.log(title, price, imgsrc);
+    addItemToCart(title, price,imgsrc);
+  }
+
+  function addItemToCart(title, price,imgsrc){
+    var cartrow= document.getElement('div');
+    cartRow.classList.add('cart-row');
+    var cartItems = document.getElementsByClassName('cart-items')[0];
+    var cartRowContents = `
+        <div class= "cart-item cart-column">
+          <img class= "cart-item-img" src= "${imgsrc}" width="100" height="100">
+          <span class= cart-item-title> ${title} </span>
+        </div>
+
+        <span class= "cart-price cart-column"> ${price} </span>
+
+        <div class= "cart-quantity cart-column">
+          <input class= "cart-quantity-input" type="number" value="6">
+          <button type="button" class=" btn btn-danger danger"> remove </button>
+        </div>`
+        cartRow.innerHTML=cartRowContents;
+        cartItems.append(cartRow);
+
+
+
   }
 
 
