@@ -2,7 +2,7 @@
 
 Mary Leong
 Landing Page for YiYi BAKERY:
-https://mleong011.github.io/CISC4800_Project1/index.html
+https://mleong011.github.io/YiYiBakery/index.html
 
 The design of this website will be simple and start off by showcasing popular bakery items and allowing people to make orders on buns. It will include links to social media sites that will be started to show new and popular items and allow customers to post their purchases and gain an online following.
 
