@@ -1,4 +1,4 @@
-# CISC4800_Project1
+# YiYi Bakery
 
 Mary Leong
 Landing Page for YiYi BAKERY:
